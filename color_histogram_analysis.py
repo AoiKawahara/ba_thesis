@@ -32,7 +32,7 @@ def Compute_Variance(Histogram):
     return variances
 
 def main():
-    folder_path = '/content/drive/MyDrive/sheetimages_en'
+    folder_path = ''
     file_list = os.listdir(folder_path)
 
     for file_name in file_list:
@@ -70,7 +70,7 @@ def Plot_Histogram(Histogram, file_name):
     plt.plot(Histogram[:,0],'h')
     plt.plot(Histogram[:,1],'s')
     plt.plot(Histogram[:,2],'v')
-    plt.savefig(f"/content/drive/MyDrive/sheetimages_en/histogramshsv_en/{file_name}_Color_Histogram.jpg")
+    plt.savefig(f"")
 
 if __name__ == '__main__':
     main()
